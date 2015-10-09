@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+	<link rel="icon" href="images/favicon_1.ico" type="image/x-icon"/>
+        <title>PES - Testathon</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="new-demo.css" media="all" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="freshdesignweb-top">
+                <header>
+		    <img src="images/happiest-minds-technology-service-providers-860x450_c.jpg" width="200" id="company-logo"/>
+                    <h1><span>Welcome to HappiestMinds - PES Testathon</span><br/><small>Pleas Register yourself</small></h1>
+                </header>       
+                <div  class="form">
+                    <form id="contactform"> 
+                        <p class="contact"><label for="name">Name</label></p> 
+                        <input id="name" name="name" placeholder="First and last name" required="" tabindex="1" type="text"> 
+
+                        <p class="contact"><label for="email">Email</label></p> 
+                        <input id="email" name="email" placeholder="example@domain.com" required="" tabindex="2" type="email"> 
+
+                        <p class="contact"><label for="username">Create a username</label></p> 
+                        <input id="username" name="username" placeholder="username" required="" tabindex="3" type="text"> 
+
+                        <p class="contact"><label for="password">Create a password</label></p> 
+                        <input type="password" id="password" name="password" required="" tabindex="4"> <br>
+                        <p style="color:#333; text-decoration: none; font-size: 12px; margin-bottom: 10px; float: left; cursor: pointer;" tabindex="5" onclick="showPassword()">Show password.</p><br>
+                        <br>
+                        <p class="contact" style="float:left;"><label for="repassword">Confirm your password</label></p> 
+                        <input type="password" id="repassword" name="repassword" required="" tabindex="2"> 
+
+                        <fieldset>
+                            <label>Birthday</label>
+                            <label class="month"> 
+                                <select class="select-style" name="BirthMonth"  tabindex="7" id="selectMonth">
+                                    <option value="">Month</option>
+                                    <option  value="01">January</option>
+                                    <option value="02">Februery</option>
+                                    <option value="03" >March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">Septembar</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12" >December</option>
+				</select>  
+                            </label>
+
+			    <label>Day<select class="select-style" name="BirthMonth"  tabindex="7" id="selectDate">
+                                    <option value="">Date</option>
+
+				</select></label>
+			    <label>Year <select class="select-style" name="BirthMonth"  tabindex="7" id="selectYear">
+                                    <option value="">Month</option>
+
+				</select> </label>
+                        </fieldset>
+			<br>
+
+                        <select class="select-style gender" name="gender" tabindex="10" id="selectGender">
+                            <option value="select">i am..</option>
+                            <option value="m">Male</option>
+                            <option value="f">Female</option>
+                            <option value="others">Other</option>
+                        </select><br><br>
+
+			<select class="select-style gender" name="gender" tabindex="10" id="selectCountry">
+			    <option value="">Country</option>
+			    <option value="">India</option>
+			    <option value="">United Kingdom</option>
+			    <option value="">United States</option>
+			</select>
+			<br><br>
+                        <input id="state" name="state" placeholder="State" required="" tabindex="1" type="text"> 
+			<input id="district" name="district" placeholder="District" required="" tabindex="1" type="text"> 
+
+			<select class="select-style gender" name="city"  tabindex="7" id="city">
+			    <option value="">City</option>
+			    <option value="Bn">Bangalore</option>
+			    <option value="Mb">Mumbai</option>
+			    <option value="Kt">Kolkatta</option>
+			    <option value="Ny">NewYork</option>
+			    <option value="Cf">Caliifornia</option>
+			    <option value="Ld">London</option>
+			    <option value="Mc">Manchestor</option>
+			</select>  
+			<br><br>
+			<input id="address" name="address" placeholder="Address Line" required="" tabindex="1" type="text" maxlength="15"> 
+
+			<input id="pincode" name="pincode" placeholder="Pin Code" required="" tabindex="1" type="text" pattern="[0-9]*"> 
+
+
+                        <p class="contact"><label for="phone">Mobile phone</label></p> 
+                        <input id="phone" name="phone" placeholder="phone number" required="" type="text" tabindex="11"> <br>
+
+                        <p class="adult"><input type="checkbox" name="above18" tabindex="12" id="selectAge"><label for="above18">I'm more than 18.</label></p>
+                        <div class="g-recaptcha" data-tabindex="13" style="width:300px;height:200px;background:url('images/recaptcha-example.gif');background-size: 300px 130px; background-repeat: no-repeat;">
+			    <input id='captcha' name='captcha' type='text' style='width:130px;margin-left: 20px;margin-top: 90px; float: left;'>
+
+			</div>
+
+                        <input class="buttom" name="submit" id="submit" tabindex="14" value="Sign me up!" type="submit"> 	 
+			<input class="buttom" name="reset" id="reset" tabindex="14" value="Reset" type="reset" onclick="confirmReset()"> 
+                    </form> 
+                </div>       
+            </div>
+        </div>
+
+        <script type="text/javascript">
+	    addYear();
+	    addDate();
+	    function addYear() {
+		var start = 1971;
+		var end = 2015;
+		var diff = end - start;
+
+		for (var i = 0; i <= diff; i++)
+		{
+		    var val = parseInt(start + i);
+		    $("#selectYear").append('<option value="' + val + '">' + val + '</option>');
+		}
+	    }
+
+	    function addDate() {
+		var start = 1;
+		var end = 31;
+		var diff = end - start;
+
+		for (var i = 0; i <= diff; i++) {
+		    var val = parseInt(start + i);
+		    $("#selectDate").append('<option value="' + val + '">' + val + '</option>');
+		}
+	    }
+
+	    function confirmReset() {
+		confirm("Are you sure want to reset al1 the fields?");
+	    }
+
+	    function showPassword() {
+
+		var text1 = $('#password').val();
+		var text2 = $('#repassword').val();
+		$('#password').attr('type', 'text').val(text1.split('#')[0]);
+		$('#repassword').attr('type', 'text').val(text2.split('#')[0]);
+
+		var name = $('#name').val();
+		$('#name').val(" " + name);
+	    }
+
+	    $("#contactform").bind("reset", function () {
+
+		$('#name').val("");
+		$('#email').val("");
+		$('#username').val("");
+		$('#password').val("");
+		$('#repassword').val("");
+		$('#selectMonth').val("");
+		$('#selectDate').val("");
+		$('#selectYear').val("");
+		$('#selectGender').val("");
+		$('#selectCountry').val("");
+		$('#state').val("");
+		$('#district').val("");
+		$('#city').val("");
+		$('#address').val("");
+		$('#pincode').val("");
+		$('#phone').val("");
+
+		return false;
+	    });
+
+	    $("#contactform").bind("submit", function () {
+
+		var name = $('#name').val();
+		var pass = $('#password').val().toLowerCase();
+		var repass = $('#repassword').val().toLowerCase();
+		var age = $('#selectAge');
+		var email = $('#email').val();
+
+		var preString = email.split('@')[0];
+
+		if (preString.indexOf('.') === -1)
+		{
+		    if (pass === repass)
+		    {
+			if (age.is(":checked"))
+			    window.location = 'success.htm?name=' + name;
+			else
+			    alert("Please accept I'm above 18");
+		    }
+		    else
+		    {
+			alert('Password and confirm password is not same!')
+		    }
+		}
+		else
+		{
+		    alert('Please enter proper email id!')
+		}
+
+		return false;
+	    });
+
+
+	</script>
+    </body>
+</html>

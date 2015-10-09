@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+	<link rel="icon" href="images/favicon_1.ico" type="image/x-icon"/>
+        <title>PES - Testathon</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="new-demo.css" media="all" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+    </head>
+    <body onload="successMsg()">
+        <div class="container">
+	    <div class="success">Thanks for Registration,</div>
+        </div>
+	<style type="text/css">
+	    .success{
+		background:#99FF66;
+		border:#006600 solid 3px;
+		font-weight: 500;
+		font-size: 19;
+		width:540px;
+		text-align: center;
+		margin-left: calc(50% - 300px);
+		margin-top: 30px;
+		padding:30px;
+	    }
+	</style>
+
+	<script type="text/javascript">
+	    function successMsg() {
+		var name = getQueryString("name");
+		$('.success').text('Thanks for Registration, '+name+' gg');
+	    }
+
+	    function getQueryString(key) {
+		if (key !== null)
+		{
+		    key = key.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+		    var regexS = "[\\?&]" + key + "=([^&#]*)";
+		    var regex = new RegExp(regexS);
+		    var results = regex.exec(window.location.search);
+		    if (results === null)
+			return "";
+		    else
+			return decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		else
+		{
+		    var loc, str;
+		    str = window.location.href;
+		    loc = str.indexOf("?");
+		    if (loc >= 0) {
+			str = str.substring(loc);
+		    } else {
+			str = "";
+		    }
+		    return str;
+		}
+	    }
+	</script>
+
+    </body>
+</html>

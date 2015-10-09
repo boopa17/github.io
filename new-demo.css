@@ -1,0 +1,16 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1{
+    text-align: center;
+}
+
+#company-logo{
+   margin-left: calc(50% - 100px);
+}
+
+#reset{
+    margin-left: 20px;
+    background:#333;
+}
